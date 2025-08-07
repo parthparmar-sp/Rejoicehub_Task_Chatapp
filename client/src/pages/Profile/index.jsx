@@ -45,7 +45,7 @@ const Profile = () => {
     }
 
     if (userinfo.image) {
-      const uplodpath="https://chat-aura-app-backend.onrender.com";
+      const uplodpath="https://rejoicehub-task-chatapp-backend.onrender.com";
       setImage(`${uplodpath}/${userinfo.image}`);
       console.log(image);
     }

@@ -75,7 +75,7 @@ function NewDM() {
       </h3>
     </div>
   );
-const imageurl="https://chat-aura-app-backend.onrender.com"
+const imageurl="https://rejoicehub-task-chatapp-backend.onrender.com"
   return (
     <>
       <TooltipProvider>

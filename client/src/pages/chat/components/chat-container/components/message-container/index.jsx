@@ -75,7 +75,7 @@ function MessageContainer() {
     setIsDownloading(true);
     setFileDownloadProgress(0);
 
-    const response = await axios.get(`https://chat-aura-app-backend.onrender.com/${url}`, {
+    const response = await axios.get(`https://rejoicehub-task-chatapp-backend.onrender.com/${url}`, {
       responseType: "blob",onDownloadProgress:(ProgressEvent)=>{
         const {loaded,total}=ProgressEvent;
         const percentCompleted=Math.round((loaded*100)/total);
@@ -141,7 +141,7 @@ function MessageContainer() {
         >
           {checkIfImage(message.fileUrl) ? (
             <img
-              src={`https://chat-aura-app-backend.onrender.com/${message.fileUrl}`}
+              src={`https://rejoicehub-task-chatapp-backend.onrender.com/${message.fileUrl}`}
               height={300}
               width={300}
               alt="Message file"
@@ -225,7 +225,7 @@ function MessageContainer() {
           >
             {checkIfImage(message.fileUrl) ? (
               <img
-                src={`https://chat-aura-app-backend.onrender.com/${message.fileUrl}`}
+                src={`https://rejoicehub-task-chatapp-backend.onrender.com/${message.fileUrl}`}
                 height={300}
                 width={300}
                 alt="Message file"
@@ -267,7 +267,7 @@ function MessageContainer() {
         <div className="fixed z-[1000] top-0 left-0 h-[100vh] w-[100vw] flex items-center justify-center backdrop-blur-lg flex-col">
           <div>
             <img
-              src={`https://chat-aura-app-backend.onrender.com/${imageURL}`}
+              src={`https://rejoicehub-task-chatapp-backend.onrender.com/${imageURL}`}
               className="h-[80vh] w-full bg-cover"
               alt="Enlarged"
             />

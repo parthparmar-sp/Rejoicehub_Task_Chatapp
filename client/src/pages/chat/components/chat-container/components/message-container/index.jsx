@@ -22,7 +22,7 @@ function MessageContainer() {
   } = userAppStore();
   const [showImage, setshowImage] = useState(false);
   const [imageURL, setimageURL] = useState(null);
-  const imageurl2="https://chat-aura-app-backend.onrender.com"
+  const imageurl2="https://rejoicehub-task-chatapp-backend.onrender.com"
 
   useEffect(() => {
     const getMessages = async () => {

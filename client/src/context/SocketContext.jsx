@@ -16,7 +16,7 @@ export const SocketProvider = ({ children }) => {
   useEffect(() => {
     if (userinfo) {
       console.log("User Info:", userinfo);
-      socket.current = io("https://chat-aura-app-backend.onrender.com", {
+      socket.current = io("https://rejoicehub-task-chatapp-backend.onrender.com", {
         withCredentials: true,
         query: { userId: userinfo.id },
       });

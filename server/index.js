@@ -17,7 +17,7 @@ const databaseurl=process.env.DATABASE_URL;
 
 app.use(cors({
   origin: [
-    "https://chat-aura-app-frontend.onrender.com",
+    "https://rejoicehub-task-chatapp.onrender.com",
     "http://localhost:5173"
   ],
   methods: ["GET", "POST", "DELETE"],
